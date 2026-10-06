@@ -9,7 +9,7 @@ public class UserInput{
 		String name = scan.nextLine();
 		
 		System.out.print("Enter your gender: ");
-		String gender = scan.next();
+		char gender = scan.next().charAt(3);
 		scan.nextLine();
 		System.out.print("Enter your address: ");
 		String address = scan.nextLine();
@@ -25,5 +25,8 @@ public class UserInput{
 		System.out.printf("You are a %s and you are living in %s ",gender,address);
 		System.out.printf("You are %d years old. Nice meeting you%n",age);
 		System.out.printf("Wow you said %b. It means that you are a professional Java Programmer%n",answer);
+		System.out.println("---------------------------------------------------------------/n");
+		
+		System.out.println("Character at index 3 is " + gender);
 	}
 }
